@@ -24,7 +24,7 @@ MonoBehaviour:
       m_GuidLow: 6310819442070431237
       m_GuidHigh: 11035272389284768777
     m_Size: {x: 0.3591224, y: 0.5}
-    m_SpecifySize: 1
+    m_SpecifySize: 0
     m_Name: JuanImage
     m_Texture: {fileID: 2800000, guid: ae3ca60588d8579409acfe4ac5292599, type: 3}
   - m_SerializedGuid:

@@ -959,8 +959,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedImage: {fileID: 880647112}
-  JuanImage: {fileID: 3729948213634112467, guid: e96d35b4194f78343a1bea3c1b3fbdb5, type: 3}
-  NataliaImage: {fileID: 0}
+  imagePrefabPairs:
+  - imageName: JuanImage
+    prefab: {fileID: 3729948213634112467, guid: e96d35b4194f78343a1bea3c1b3fbdb5, type: 3}
+  - imageName: NataliaImage
+    prefab: {fileID: 3729948213634112467, guid: 6f170502e3867fb46baa77c712be2e7f, type: 3}
 --- !u!1 &1225402148
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,11 +993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ec5cf77ef0d394883dd4998e6f1915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHasDied: 0
-  enemyDeadObject: {fileID: 0}
-  mainMenuButt: {fileID: 297642707}
-  areEnemiesReady: 0
-  enemies: []
 --- !u!4 &1225402150
 Transform:
   m_ObjectHideFlags: 0

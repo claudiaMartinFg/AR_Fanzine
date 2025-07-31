@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 4912959da4894324685307eea20f1545
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FakeAR.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TrackingImage.unity
     guid: 9fda1d6efe168f74d8cf45c94c41074f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EnvironmentTracking.unity
     guid: 953c543bf834fcd42bfd962e4453e740
   m_configObjects:
