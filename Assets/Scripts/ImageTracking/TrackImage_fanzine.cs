@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -52,11 +53,22 @@ public class TrackImage_fanzine : MonoBehaviour
             //Busca el nombre de la imagen dentro del diccionario.
             if (prefabDictionary.TryGetValue(newImage.referenceImage.name, out GameObject prefabToInstantiate))
             {
-                // Si encuentra el nombre instancia el prefab y lo guarda en la lista de objetos instanciados.
+                //Si encuentra el nombre instancia el prefab y lo guarda en la lista de objetos instanciados.
                 GameObject instantiatedObject = Instantiate(prefabToInstantiate, newImage.transform.position, newImage.transform.rotation, newImage.transform);
                 instantiatedObjects[newImage.referenceImage.name] = instantiatedObject;
                 Debug.Log($"Instanciado y guardado: {instantiatedObject.name}");
+
+                var videoPlayer = instantiatedObject.GetComponentInChildren<VideoPlayer>();
+                if (videoPlayer != null)
+                {
+                    //Ajusta la escala del Quad para que coincida con el tamaño de la imagen física.
+                    float aspectRatio = (float)videoPlayer.width / videoPlayer.height;
+                    instantiatedObject.transform.localScale = new Vector3(newImage.size.x, newImage.size.x / aspectRatio, 1f);
+                }
+                instantiatedObject.transform.localEulerAngles = Vector3.right * 90;
+
                 Debug.Log($"Hecho: Instanciado {prefabToInstantiate.name} sobre {newImage.referenceImage.name}");
+                
             }
         }
 
@@ -81,7 +93,7 @@ public class TrackImage_fanzine : MonoBehaviour
 
         foreach (var removedImage in eventArgs.removed)
         {
-            // Buscamos su objeto, lo destruimos y lo quitamos del diccionario para limpiar la memoria.
+            //Busca su objeto, lo destruye y lo quita del diccionario para limpiar la memoria.
             if (instantiatedObjects.TryGetValue(removedImage.referenceImage.name, out GameObject instance))
             {
                 Destroy(instance);

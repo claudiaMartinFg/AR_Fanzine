@@ -960,10 +960,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trackedImage: {fileID: 880647112}
   imagePrefabPairs:
-  - imageName: JuanImage
-    prefab: {fileID: 3729948213634112467, guid: e96d35b4194f78343a1bea3c1b3fbdb5, type: 3}
   - imageName: NataliaImage
-    prefab: {fileID: 3729948213634112467, guid: 6f170502e3867fb46baa77c712be2e7f, type: 3}
+    prefab: {fileID: 5686584650520230796, guid: b3c370938e45e244e9dc89d818a446e7, type: 3}
 --- !u!1 &1225402148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,37 +1197,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &2003931307
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2003931308}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2003931308
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003931307}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.020313215, y: 0.9235866, z: -0.33856076}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1241,5 +1208,4 @@ SceneRoots:
   - {fileID: 728770439}
   - {fileID: 880647111}
   - {fileID: 1145689721}
-  - {fileID: 2003931308}
   - {fileID: 1360877996}
