@@ -65,7 +65,7 @@ public class TrackImage_fanzine : MonoBehaviour
                     float aspectRatio = (float)videoPlayer.width / videoPlayer.height;
                     instantiatedObject.transform.localScale = new Vector3(newImage.size.x, newImage.size.x / aspectRatio, 1f);
                 }
-                instantiatedObject.transform.localEulerAngles = Vector3.right * 90;
+                
 
                 Debug.Log($"Hecho: Instanciado {prefabToInstantiate.name} sobre {newImage.referenceImage.name}");
                 

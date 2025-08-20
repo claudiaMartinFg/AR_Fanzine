@@ -33,7 +33,7 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 469519133145478685
       m_GuidHigh: 10873421396644814875
-    m_Size: {x: 0.5, y: 0.1741573}
-    m_SpecifySize: 0
+    m_Size: {x: 0.54, y: 0.7661697}
+    m_SpecifySize: 1
     m_Name: NataliaImage
     m_Texture: {fileID: 2800000, guid: fa62b61d112906841b6025802627e696, type: 3}
