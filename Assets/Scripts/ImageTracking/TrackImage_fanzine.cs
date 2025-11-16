@@ -73,7 +73,7 @@ public class TrackImage_fanzine : MonoBehaviour
                 }
               
 
-                Debug.Log($"Hecho: Instanciado {prefabToInstantiate.name} sobre {newImage.referenceImage.name}, con la medida {instantiatedObject.transform.localScale}, {aspectRatio}");
+                Debug.Log($"Instanciado {prefabToInstantiate.name}, con la medida {instantiatedObject.transform.localScale}, {aspectRatio}");
                 
             }
         }
