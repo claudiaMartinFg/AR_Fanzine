@@ -26,8 +26,9 @@ public class TrackImage_fanzine : MonoBehaviour
 
     private Dictionary<string, GameObject> prefabDictionary = new Dictionary<string, GameObject>(); //Diccionario para saber que prefab le pertenece a cada imagen.
 
-    private Dictionary<string, GameObject> instantiatedObjects = new Dictionary<string, GameObject>(); //Diccionario para saber que hay instanciado
+    //private Dictionary<string, GameObject> instantiatedObjects = new Dictionary<string, GameObject>(); //Diccionario para saber que hay instanciado
 
+    private Dictionary<TrackableId, GameObject> instantiatedObjects = new Dictionary<TrackableId, GameObject>();
     void Awake()
     {
         //Para llenar la info del diccionario
@@ -55,7 +56,9 @@ public class TrackImage_fanzine : MonoBehaviour
             {
                 //Si encuentra el nombre instancia el prefab y lo guarda en la lista de objetos instanciados.
                 GameObject instantiatedObject = Instantiate(prefabToInstantiate, newImage.transform.position, newImage.transform.rotation, newImage.transform);
-                instantiatedObjects[newImage.referenceImage.name] = instantiatedObject;
+               // instantiatedObjects[newImage.referenceImage.name] = instantiatedObject;
+                instantiatedObjects[newImage.trackableId] = instantiatedObject;
+
                 Debug.Log($"Instanciado y guardado: {instantiatedObject.name}");
 
                 var videoPlayer = instantiatedObject.GetComponentInChildren<VideoPlayer>();
@@ -75,7 +78,7 @@ public class TrackImage_fanzine : MonoBehaviour
         foreach (var updatedImage in eventArgs.updated)
         {
             //Buscamos el objeto correspondiente en nuestro diccionario de instanciados.
-            if (instantiatedObjects.TryGetValue(updatedImage.referenceImage.name, out GameObject instance))
+            /*if (instantiatedObjects.TryGetValue(updatedImage.referenceImage.name, out GameObject instance))
             {
                 //Comprobamos si se sigue trackeando bien o ha perdido el rastro.
                 bool isTracking = updatedImage.trackingState == TrackingState.Tracking;
@@ -88,16 +91,34 @@ public class TrackImage_fanzine : MonoBehaviour
                 {
                     instance.transform.SetPositionAndRotation(updatedImage.transform.position, updatedImage.transform.rotation);
                 }
+            }*/
+
+            if (instantiatedObjects.TryGetValue(updatedImage.trackableId, out GameObject instance))
+            {
+                bool isTracking = updatedImage.trackingState == TrackingState.Tracking;
+                instance.SetActive(isTracking);
+
+                if (isTracking)
+                {
+                    instance.transform.SetPositionAndRotation(
+                        updatedImage.transform.position,
+                        updatedImage.transform.rotation
+                    );
+                }
             }
+
+
         }
 
         foreach (var removedImage in eventArgs.removed)
         {
             //Busca su objeto, lo destruye y lo quita del diccionario para limpiar la memoria.
-            if (instantiatedObjects.TryGetValue(removedImage.referenceImage.name, out GameObject instance))
+            if (instantiatedObjects.TryGetValue(removedImage.trackableId, out GameObject instance))
             {
                 Destroy(instance);
-                instantiatedObjects.Remove(removedImage.referenceImage.name);
+                // instantiatedObjects.Remove(removedImage.referenceImage.name);
+                instantiatedObjects.Remove(removedImage.trackableId);
+
                 Debug.Log($"Destruido y eliminado: {instance.name}");
             }
         }

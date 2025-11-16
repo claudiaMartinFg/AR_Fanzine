@@ -18,16 +18,6 @@ MonoBehaviour:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 4963813312114515499
-      m_GuidHigh: 1958710179643855772
-    m_SerializedTextureGuid:
-      m_GuidLow: 6310819442070431237
-      m_GuidHigh: 11035272389284768777
-    m_Size: {x: 0.3591224, y: 0.5}
-    m_SpecifySize: 0
-    m_Name: JuanImage
-    m_Texture: {fileID: 2800000, guid: ae3ca60588d8579409acfe4ac5292599, type: 3}
-  - m_SerializedGuid:
       m_GuidLow: 5147434322808586216
       m_GuidHigh: 7267247015119432321
     m_SerializedTextureGuid:
@@ -37,3 +27,33 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: NataliaImage
     m_Texture: {fileID: 2800000, guid: fa62b61d112906841b6025802627e696, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5296761153806076526
+      m_GuidHigh: 4015466981313723288
+    m_SerializedTextureGuid:
+      m_GuidLow: 16502522153635328746
+      m_GuidHigh: 5558962079943576747
+    m_Size: {x: 0.54, y: 0.7661697}
+    m_SpecifySize: 1
+    m_Name: ChidoriImage
+    m_Texture: {fileID: 2800000, guid: f172b2eabc76e504ab4ce71e8f66254d, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4956377762815304954
+      m_GuidHigh: 41500588556848517
+    m_SerializedTextureGuid:
+      m_GuidLow: 10728742578144280337
+      m_GuidHigh: 11446665733042376712
+    m_Size: {x: 0.54, y: 0.7661697}
+    m_SpecifySize: 1
+    m_Name: MinakoImage
+    m_Texture: {fileID: 2800000, guid: 10e5ff11268894e40890a050d6b9da9e, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5314677491289345344
+      m_GuidHigh: 15039796172684073878
+    m_SerializedTextureGuid:
+      m_GuidLow: 811787089799302054
+      m_GuidHigh: 17649911402107208203
+    m_Size: {x: 0.54, y: 0.7661697}
+    m_SpecifySize: 1
+    m_Name: MitsukoImage
+    m_Texture: {fileID: 2800000, guid: a0bc4ba60c0e0b440b82b72fe814f1f4, type: 3}
