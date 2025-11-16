@@ -16,6 +16,7 @@ public class ImagePrefabPair
     // El Prefab que instanciar para esa imagen.
     [Tooltip("El Prefab que instanciar para esa imagen")]
     public GameObject prefab;
+
 }
 
 public class TrackImage_fanzine : MonoBehaviour
@@ -29,6 +30,8 @@ public class TrackImage_fanzine : MonoBehaviour
     //private Dictionary<string, GameObject> instantiatedObjects = new Dictionary<string, GameObject>(); //Diccionario para saber que hay instanciado
 
     private Dictionary<TrackableId, GameObject> instantiatedObjects = new Dictionary<TrackableId, GameObject>();
+
+    public float aspectRatio;
     void Awake()
     {
         //Para llenar la info del diccionario
@@ -65,12 +68,12 @@ public class TrackImage_fanzine : MonoBehaviour
                 if (videoPlayer != null)
                 {
                     //Ajusta la escala del Quad para que coincida con el tamaño de la imagen física.
-                    float aspectRatio = (float)videoPlayer.width / videoPlayer.height;
+                    aspectRatio = (float)videoPlayer.width / videoPlayer.height;
                     instantiatedObject.transform.localScale = new Vector3(newImage.size.x, newImage.size.x / aspectRatio, 1f);
                 }
-                
+              
 
-                Debug.Log($"Hecho: Instanciado {prefabToInstantiate.name} sobre {newImage.referenceImage.name}");
+                Debug.Log($"Hecho: Instanciado {prefabToInstantiate.name} sobre {newImage.referenceImage.name}, con la medida {instantiatedObject.transform.localScale}, {aspectRatio}");
                 
             }
         }
