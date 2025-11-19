@@ -67,3 +67,33 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: JuanImage
     m_Texture: {fileID: 2800000, guid: 908a73dd03e0d6c409d324feb3125af0, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5400391300455577321
+      m_GuidHigh: 5265612045566888116
+    m_SerializedTextureGuid:
+      m_GuidLow: 13232843772918557788
+      m_GuidHigh: 13895991401289198922
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Juan2Image
+    m_Texture: {fileID: 2800000, guid: 050cec5c814db7a44aadb92b8e7ad8c0, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5498628939156291560
+      m_GuidHigh: 15547775401018656698
+    m_SerializedTextureGuid:
+      m_GuidLow: 244517513651562415
+      m_GuidHigh: 16977882632001670730
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Juan3Image
+    m_Texture: {fileID: 2800000, guid: 169027afb36203644acebb164d8e9deb, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5231173047359224924
+      m_GuidHigh: 4933016202160354748
+    m_SerializedTextureGuid:
+      m_GuidLow: 2464694299286743606
+      m_GuidHigh: 1845424545715931898
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Juan4Image
+    m_Texture: {fileID: 2800000, guid: 1ceaaa365a682234fa4a2fcbd8439c19, type: 3}

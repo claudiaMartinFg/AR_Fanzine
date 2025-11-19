@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4487458, g: 0.49751914, b: 0.56939614, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -701,6 +701,15 @@ MonoBehaviour:
     prefab: {fileID: 519390643988073639, guid: facc23af5b50f3f46a801fed74ae6d0a, type: 3}
   - imageName: ChidoriImage
     prefab: {fileID: 5412857958982867032, guid: 3613bc34b95eef1439b220b282633eb2, type: 3}
+  - imageName: JuanImage
+    prefab: {fileID: 2294159459696563904, guid: 64eb81a4eafe1c8489f6470afabfa5b3, type: 3}
+  - imageName: Juan2Image
+    prefab: {fileID: 2294159459696563904, guid: bb91011fe53249b45a51c750fc6ba9ed, type: 3}
+  - imageName: Juan3Image
+    prefab: {fileID: 2294159459696563904, guid: 159dfc6f4095f704f8615ed3e5a0b68d, type: 3}
+  - imageName: Juan4Image
+    prefab: {fileID: 2294159459696563904, guid: 27098d952f084a44ca1ccee84dff08a1, type: 3}
+  aspectRatio: 0
 --- !u!1 &1225402148
 GameObject:
   m_ObjectHideFlags: 0
