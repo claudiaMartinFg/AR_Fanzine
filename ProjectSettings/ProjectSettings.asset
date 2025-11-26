@@ -136,7 +136,13 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 61ba0e29c939e54408f5f60b177227c9, type: 2}
+  - {fileID: -5258042797741524309, guid: 5bd2bc3a0568f7645b8962c3d9603787, type: 2}
+  - {fileID: 11400000, guid: 90487bd7d886ba248b63307a6c749d6b, type: 2}
+  - {fileID: -525256991468625377, guid: f3a4dac05f61cd8479dfadd2964ff09a, type: 2}
+  - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
+  - {fileID: 4800000, guid: 0945859e5a1034c2cb6dce53cb4fb899, type: 3}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -258,7 +264,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: "C:/Users/Cl\xE0udia/Desktop/user.keystore"
+  AndroidKeystoreName: C:/Users/claud/Desktop/user.keystore
   AndroidKeyaliasName: cyberpunk
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0

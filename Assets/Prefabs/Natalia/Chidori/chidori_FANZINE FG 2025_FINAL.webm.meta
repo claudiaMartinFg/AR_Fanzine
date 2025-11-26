@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b0ca67ffc18f9844b9fc794a41c9ce26
+guid: 9ed2bffb2eb29c14984823e240b5c34a
 VideoClipImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -18,8 +18,8 @@ VideoClipImporter:
       codec: 2
       resizeFormat: 0
       aspectRatio: 0
-      customWidth: 2039
-      customHeight: 2893
+      customWidth: 488
+      customHeight: 750
       bitrateMode: 2
       spatialQuality: 2
   userData: 
